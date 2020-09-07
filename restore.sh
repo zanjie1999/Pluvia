@@ -134,7 +134,7 @@ if [ ! -f "$ecidf" ]; then
 else
 	echo Using cached SHSH for ECID 0x$ecid
 fi
-rm -rf "`realpath "$1" | sed 's/\.ipsw$//'`"
+#rm -rf "`realpath "$1" | sed 's/\.ipsw$//'`"
 killall iTunes iTunesHelper >/dev/null 2>&1 || true
 killall -STOP AMPDeviceDiscoveryAgent >/dev/null 2>&1 || true
 cd tools/ipwndfu
